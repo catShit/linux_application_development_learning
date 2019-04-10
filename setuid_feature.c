@@ -17,6 +17,7 @@ void print_uid(char *str, int ret)
 int main(void)
 {
     int ret = 0;
+
     print_uid("init", ret);            /* Real:1000  Effective:   0  Saved:   0 */
 
     ret = seteuid(600);
